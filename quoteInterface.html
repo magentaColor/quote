@@ -1,23 +1,22 @@
-<div id="lightningOut"></div>
-
-<script src="https://ketupa-developer-edition.um1.force.com/quote/lightning/lightning.out.js"></script>
-<script>
-    body {background: lightgrey;}
-</script>
-
-<script>
-    $Lightning.use("c:quoteAuraApp",    // name of the Lightning app
-        function() {                  // Callback once framework and app loaded
-            $Lightning.createComponent(
-                "c:quoteLightningOut", // top-level component of your app
-                { },                  // attributes to set on the component when created
-                "lightningOut",   // the DOM location to insert the component
-                function(cmp) {
-                    console.log("lightning out created")
-                    // callback when component is created and active on the page
-                }
-            );
-        },
-        'https://ketupa-developer-edition.um1.force.com/quote'  // Community endpoint
-    );
-</script>
+<html>
+    <body style="background: lightgrey;">
+        <div id="lightningOut"></div>
+    </body>
+    <script src="https://ketupa-developer-edition.um1.force.com/quote/lightning/lightning.out.js"></script>
+    <script>
+        $Lightning.use("c:quoteAuraApp",    // name of the Lightning app
+            function() {                  // Callback once framework and app loaded
+                $Lightning.createComponent(
+                    "c:quoteLightningOut", // top-level component of your app
+                    { },                  // attributes to set on the component when created
+                    "lightningOut",   // the DOM location to insert the component
+                    function(cmp) {
+                        console.log("lightning out created")
+                        // callback when component is created and active on the page
+                    }
+                );
+            },
+            'https://ketupa-developer-edition.um1.force.com/quote'  // Community endpoint
+        );
+    </script>
+</html>
