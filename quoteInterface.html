@@ -2,7 +2,7 @@
     <body style="background: lightgrey;">
         <div id="lightningOut"></div>
     </body>
-    <script src="https://ketupa-developer-edition.um1.force.com/quote/lightning/lightning.out.js"></script>
+    <script src="https://chapph2-chap.cs122.force.com/CHAPChat/lightning/lightning.out.js"></script>
     <script>
         $Lightning.use("c:quoteAuraApp",    // name of the Lightning app
             function() {                  // Callback once framework and app loaded
@@ -12,11 +12,10 @@
                     "lightningOut",   // the DOM location to insert the component
                     function(cmp) {
                         console.log("lightning out created")
-                        // callback when component is created and active on the page
                     }
                 );
             },
-            'https://ketupa-developer-edition.um1.force.com/quote'  // Community endpoint
+            'https://chapph2-chap.cs122.force.com/CHAPChat'
         );
     </script>
 </html>
