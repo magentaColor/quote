@@ -1,0 +1,23 @@
+<html>
+    <body style="background: lightgrey">
+        <div id="lightningOut"></div>
+    </body>
+    <script src="https://dev1-teamcolor.cs201.force.com/Support/lightning/lightning.out.js"></script>
+    <script>
+        $Lightning.use(
+            "c:quoteAuraApp", // name of the Lightning app
+            function () {
+                // Callback once framework and app loaded
+                $Lightning.createComponent(
+                    "c:quoteLightningOut", // top-level component of your app
+                    {}, // attributes to set on the component when created
+                    "lightningOut", // the DOM location to insert the component
+                    function (cmp) {
+                        console.log("lightning out created");
+                    }
+                );
+            },
+            "https://dev1-teamcolor.cs201.force.com/Support"
+        );
+    </script>
+</html>
